@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <script src="app.js"></script>
+        <link rel="stylesheet" href="all.css">
+        <link rel="stylesheet" href="Ejercicios_javascript.css">
+        <script src="all.js"></script>
+        <script>
+            function escribe(){
+    let rellena = document.getElementsByName('cuadrode')[0].value;
+    alert("Encantado de conocerte "+rellena);
+}
+        </script>
+    </head>
+  <!-- Content navigation bar -->
+  <body>
+  <ul class="naba">
+    <li>
+        <a href="index.html">
+            <span class="yuhan link_text">Yuhan</span>
+            <i class="fas fa-asterisk fa-2x icon rotate1"></i>
+        </a>
+    </li>
+    <li>
+        <a href="#start_page">
+            <i class="fas fa-home fa-2x icon"></i>
+            <span class="link_text">Home</span>
+        </a>
+    </li>
+    <li>
+        <a href="#cuestionarios">
+            <i class="fab fa-js-square fa-2x icon"></i>
+            <span class="link_text">Exercises</span>
+        </a>
+    </li>
+</ul>
+
+<div class="contenido">
+<!-- Ejercicios Javascript -->
+<h1 class="title" id="start_page">Ejercicios Javascript</h1>
+<!--Variables:Ejemplos-->
+<h2 class="titlesmall">Variables en Javascript</h2>
+<button class="ex_but" onclick="ej_var()">Iniciar Ejercicio</button>
+<!-- Calculadora de números: simples multiplicaciones -->
+<h2 class="titlesmall">Calculadora de simples multiplicaciones</h2>
+<button class="ex_but" onclick="calc_simpl()">Iniciar Ejercicio</button>
+<!-- Raíz cuadrada de un número dado -->
+<h2 class="titlesmall">Raíz cuadrada de un número dado</h2>
+<button class="ex_but" onclick="ra_cua()">Iniciar Ejercicio</button>
+<!-- Área de un círculo dado el radio -->
+<h2 class="titlesmall">Área y perímetro de un círculo dado el radio</h2>
+<button class="ex_but" onclick="ar_circ()">Iniciar Ejercicio</button>
+<!-- Cálculo del IVA -->
+<h2 class="titlesmall">Cálculo del IVA</h2>
+<button class="ex_but" onclick="IVA()">Iniciar Ejercicio</button>
+<!-- Números aleatorios -->
+<h2 class="titlesmall" >Números aleatorios</h2>
+<button class="ex_but" onclick="numal()">Iniciar Ejercicio</button>
+<!-- If statement -->
+<h2 class="titlesmall">If statement</h2>
+<button class="ex_but" onclick="edad()">Iniciar Ejercicio</button>
+<!-- Comparación de dos números -->
+<h2 class="titlesmall">Comparación de dos números</h2>
+<button class="ex_but" onclick="comp_num()">Iniciar Ejercicio</button>
+<!-- Cáculo de la raíz de un número, con condición -->
+<h2 class="titlesmall">Cáculo de la raíz de un número, con condición</h2>
+<button class="ex_but" onclick="racuacon()">Iniciar Ejercicio</button>
+<!-- Juego tipo Tómbola -->
+<h2 class="titlesmall">Juego tipo Tómbola</h2>
+<button class="ex_but" onclick="tombol()">Iniciar Ejercicio</button>
+<!-- Cuestionario de 10 preguntas -->
+<h2 class="titlesmall">Cuestionario de 10 preguntas</h2>
+<button class="ex_but" onclick="cuest()">Iniciar Ejercicio</button>
+<!-- Cuestionario con tiempo -->
+<h2 class="titlesmall">Cuestionario de 5 preguntas con contador de tiempo</h2>
+<button class="ex_but" onclick="cuestionario2()">Iniciar Ejercicio</button>
+<!-- Ir a otra página -->
+<h2 class="titlesmall">Te voy a llevar a otra página</h2>
+<button class="ex_but" onclick="takeme()">Ir a página web</button>
+
+<!-- Adivinar el número -->
+<h2 class="titlesmall">Adivinar el número entre el 0 y el 5</h2>
+<button class="ex_but" onclick="gyess()">Iniciar Ejercicio</button>
+<!-- Ya se implementa las estructuras repetitvas en el ejercicio de adivinar el número -->
+<h3 style="color:white;font-family: museo_moderno;">Los botones y las funciones se han aplicado a todos los ejercicios</h3>
+<!-- Control del tiempo en Javascript -->
+<h2 class="titlesmall">Control del tiempo en Javascript </h2>
+<h3 style="color:white;font-family: museo_moderno;">Lo verás 20 segundos depués de que abras la página</h3>
+<!-- Cuadros de texto en Javascript -->
+<h2 class="titlesmall">Cuadros de texto en Javascript</h2>
+<p style="font-family: kufam; color:white; display: inline; margin-right: 5px;">Hola, como te llamas</p><input type="text" name="cuadrode" style="margin-bottom:25px"/><input type="button" name="escribirTexto" id="" value="Pulsa Aquí" onclick="escribe()"/>
+</div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+body{
+    margin:0;
+    background-image: url(mars_background.jpg);
+    background-size:contain;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-track{
+    background-color: black;
+}
+body::-webkit-scrollbar-thumb{
+    background-color:whitesmoke;
+    border-radius:15px;
+    border: 1px solid;
+}
+/*Tipografías*/
+@font-face{
+    font-family: museo_moderno;
+    src: url(MuseoModerno.ttf);
+}
+@font-face{
+    font-family: kufam;
+    src: url(Kufam.ttf);
+}
+
+/*Diseño de los textos*/
+.text{
+    font-family: kufam;
+    color:white;
+    font-size:15px;
+}
+.title{
+    font-family:museo_moderno;
+    font-size:60px;
+    color:white;
+    text-align:center;
+    border-bottom: blue;
+    border-bottom-style: solid ;
+}
+.titlesmall{
+    font-size: 35px;
+    color: white;
+    font-family: museo_moderno;
+    margin-bottom:0;
+}
+.titlesmall:not(first-child){
+    margin-top:15px;
+}
+.yuhan{
+    letter-spacing: 0.5ch;
+    font-family: kufam;
+    font-size: 35px;
+}
+.contenido{
+    margin-left:5%;
+    padding-left:15px;
+}
+
+/*Navbar*/
+ul.naba{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    width:5%;
+    height:100%;
+    position: fixed;
+    background-color: rgb(60, 105, 194);
+    transition: ease 500ms;
+    font-size: 25px;
+    overflow:hidden;
+    text-overflow: clip;
+}
+ul.naba li{
+    font-family: museo_moderno;
+    color:black;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(60, 105, 194);
+}
+ul.naba  li:hover{
+    background-color:rgba(22, 194, 233, 0.29);
+}
+ul.naba:hover{
+    width:250px
+}
+li a{
+    text-decoration: none;
+    color:black;
+    display: flex;
+    align-items: center;
+}
+
+ul.naba span.link_text{
+    display:none;
+    margin-left:5px;
+}
+ul.naba:hover span.link_text{
+    display:inline;
+}
+
+.icon{
+    margin:8px; 
+}
+.rotate1{
+    transform: rotate(0deg);
+    transition: ease 1s ;
+}
+ul.naba:hover .rotate1{
+    transform: rotate(-540deg);
+}
+
+/*Botones*/
+.ex_but{
+    font-family: kufam;
+    color:black;
+    background-color:white;
+    border-color: white;
+    border-style: solid;
+    padding:5px;
+    margin: 5px;
+}
+.ex_but:hover{
+    background-color: transparent;
+    color: white;
+}

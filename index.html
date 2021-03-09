@@ -1,0 +1,122 @@
+<html>
+    <head>
+        <title>Yuhan</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="all.css">
+        <script src="all.js"></script>
+        <script>
+            alert("Bienvenido a mi página web");
+        </script>
+    </head>
+    <body>
+        <!-- Content navigation bar -->
+        <ul class="naba">
+            <li>
+                <a href="">
+                    <span class="yuhan link_text">Yuhan</span>
+                    <i class="fas fa-asterisk fa-2x icon rotate1"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#Inicio">
+                    <i class="fas fa-home fa-2x icon"></i>
+                    <span class="link_text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="#america" >
+                    <i class="fas fa-flag-usa fa-2x icon"></i>
+                    <span class="link_text">United States</span>
+                </a>
+            </li>
+            <li>
+                <a href="#china">
+                    <i class="fas fa-yen-sign fa-2x icon" style="margin-right:18px;"></i>
+                    <span class="link_text">China</span>
+                </a>
+            </li>
+            <li>
+                <a href="#cuestionarios">
+                    <i class="fab fa-js-square fa-2x icon"></i>
+                    <span class="link_text">Exercises</span>
+                </a>
+            </li>
+        </ul>
+       <!-- Logo -->
+        <div class="contenido">
+        <h1 class="title" id="Inicio">The Long march to Mars</h1>
+        <h2 style="font-family: museo_moderno;font-size: 25px;color:white">Ambiente</h2>
+       
+       
+       
+        <audio id="player" >
+            <source src="Danse_Macabre.mp3" type="audio/mp3">
+        </audio>
+        <div class="playpause">
+            <input type="checkbox" value="None" id="playpause" name="check" onclick="togglePlay()"/>
+            <label for="playpause" tabindex="0 "></label>
+          </div>
+
+
+          <script>
+            var audioElement= document.getElementById("player");
+            function togglePlay() {
+             if (audioElement.paused) {
+             audioElement.play();
+         }
+            else {
+                audioElement.pause();
+         }
+            };
+
+        </script>
+
+
+
+
+
+        <h3 style="font-family:museo_moderno;font-size: 40px;color:white; margin-bottom:0;padding-bottom: 0;">Introduction</h3>
+        <p class="text">Exploring is something inherently human and since there is not much left to discover about Earth, humans have set their eyes on the darkness of the night sky to reach fo the stars. The first space race took place between the former USSR and USA, a tug of war in which both nations aimed to conquer space exploration. Pushing each other to their limits for 12 years until the americans with the apollo13 mission reached the lunar surface, rendering them an absolute victory in ther space race. Those incredible feats seem distant and certainly unbelievable. But we are alredy witnessing the second space race, in which nations are pushing for a permanent base in the moon and have alredy set their eyes on the red planet, Mars. The two racers to Mars are China and United States. </p>
+
+
+
+        <h2 style="font-family:museo_moderno;font-size: 35px;color:white" id="america">United States</h2>
+        <h3 style="font-family: museo_moderno;font-size: 25px;color:white">Elon Musk</h3>
+        <p class="text">Elon is a renowned entrepreneur, known for his electric car company Tesla,his recently founded neuralink and relative to this matter, founder of SpaceX.</p>
+        <img src="logo.png" alt="" style="height:15px;width:150px;">
+        <p class="text">Since its founding SpaceX is nothing short from having achieved incredible feats. Their reusable rockets have allowed to reduce the astronomical cost of launching rockets to space. The first comercial flights to space have alredy been taken and there is a movie on the works featuring the legendary action actor Tom Cruise. Their powerful Merlin boosters have allowed them to create one of the most powerful rockets, Flacon Heavy, and one of the most versatile ones,Falcon9, which has alredy been flown more than 100 times to deliver people and cargo into orbit. Falcon9 is particularly used to deliver the satellites that will compose Starlink as well as deliver passengers to the ISS. But only the base booster is reusable making the top part space waste once it is alredy used. That's why SpaceX is currently aiming for project Starship.</p>
+        <div class="gallery">
+            <img src="falcon9.jfif" alt="falcon9 takeoff" class="img_siz">
+            <img src="falcon_heavy.jpg" alt="falcon_heavy" class="img_siz">
+        </div>
+
+
+        <h3 style="font-family: museo_moderno;font-size: 20px; color:white">Starship</h3>
+        <p class="text">Starship is a two-stage rocket, in which both components are capable of reaching orbit and landing themselves on themselves. Powered by the new Raptor engines it is still a project on the works and the top part, Starship spacecraft, has alredy taken flight twice. The Super Heavy rocket is as big as the Falcon9 with the stages combined. In total the rocket is 120m tall and is a fully reusable rocket., which promises to be the future of interplanetary tarvelling. Like the Flacon9 did when it was fully functional, Starship promises to be able to deliver 5 times its current payload limit. Speeding the process of putting in orbit the satelite constelation of Starlink and as well space exploration. Being the first aim of Starship reach for Mars and stablish a colony in there. As of recently, NASA has landed their second rover on Mars succesfully.  </p>
+        <div class="gallery">
+            <img src="starship.jfif" alt="falcon9 takeoff" class="img_siz">
+            <img src="starship2.jfif" alt="falcon_heavy" class="img_siz">
+        </div>
+
+
+
+
+        <h2 style="font-family: museo_moderno;color:white;font-size: 35px" id="china">China</h2>
+        <h3 style="font-family: museo_moderno;color:white;font-size: 15px">Long March</h3>
+        <p class="text">Long March is China's code name given to the rockets for its space exploration program. Long March is a very significant name for the country, its is the road communist take during the chinese civil war to retreat and gather up their forces to lead to their victory shortly afterwards. China's space program is nothing short to SpaceX's achievements. They have managed to put in orbit an space satation that sadly crashed shortly after it was put into orbit. And their second space stasion which is alredy in the works. Chinese rockets have achieved reusability in their rockets, but only partially. With their Long March rockets they have made it to th edark side of the moon to collect samples and they are the second country, after USA, to have placed their flag on the lunar surface.</p>
+        <img src="moon_flag.jpg" alt="china's moon flag" class="img_siz">
+        <p class="text"><b>Long March 5</b> is the rocket proyected to be the one that will guarantee China their ticket to landing the first crew mission to land on Mars. The rocket, similiar in size to Starship, is a fierce competitor to the american counerpart. With their own satellite alredy in its way to orbit the red planet, the chinese aren't slacking. However test flights are said to be taken near civilians. One particualr failed test flight crashed in the river of a small town near the test facilities, luckily no one was hurt during the incident</p>
+        <img src="long_march_5.jpg" alt="" style="height:auto;width:auto;">
+
+
+        <h2 style="font-family:museo_moderno; color:white;font-size: 35px;" id="cuestionarios"><a href="Ejercicios_javascript.html" class="link" target="_blank">Ejercicios de Javascript</a></h2>
+
+
+
+        <h2 style="font-family:museo_moderno; color:white;font-size: 35px;" >Disclaimer</h2>
+        <p class="text">SpaceX's logo is property of Space Exploration Technologies Corp.. </p>
+        </div>
+
+        
+    </body>
+</html>
